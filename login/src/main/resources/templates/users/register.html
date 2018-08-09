@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>Insert title here</title>
+</head>
+<body>
+
+	<form th:object="${viewModel}" method="post">
+	
+		Name: <input th:field="*{username}" type="text"/><br/>
+	
+		Password: <input th:field="*{password}" type="password"/><br/>
+		
+		<input type="submit" value="Register"/><br/>
+	
+	</form>
+
+
+</body>
+</html>
