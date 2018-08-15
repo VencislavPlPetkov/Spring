@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title th:text="${title}"></title>
+</head>
+<body>
+
+
+
+<form method="post" action="/secured">
+
+	<input type="text" name="username" placeholder="Enter your name"/><br/>
+
+	Enter sum of: <span th:text="${num1} + ' and ' + ${num2}"></span>
+	
+	<input type="number" name="sum" placeholder="Enter sum here "><br/>
+
+
+	<input type="submit"/>
+</form>
+
+
+
+
+</body>
+</html>
